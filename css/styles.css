@@ -26,6 +26,12 @@ a {
 ul {
   list-style: none;
 }
+.container{
+width: 1440px;
+outline: 2px solid red;
+margin: 0 auto;
+
+}
 
 /**---------------HEADER------------------------*/
 
