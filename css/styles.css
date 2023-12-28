@@ -7,6 +7,7 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
   background-color: #fff;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -42,7 +43,9 @@ margin: 0 auto;
   line-height: 1.5;
   /* 150% */
   letter-spacing: 0.02em;
-}
+  padding-top: 24px;
+  padding-bottom: 24px;
+  }
 
 .nav-link:hover,
 .nav-link:focus {
@@ -58,6 +61,8 @@ margin: 0 auto;
   /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-top: 2,.5px;
+  padding-bottom: 25.5px;
 }
 
 .logo-part {
@@ -69,9 +74,12 @@ margin: 0 auto;
   /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  
 }
 address {
-  font-style: normal
+  font-style: normal;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 /*
 h1 {
@@ -104,6 +112,7 @@ h1 {
 
 .hero {
   background: #2e2f42;
+  height: 600px;
 }
 
 .hero-title {
@@ -113,6 +122,10 @@ h1 {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  padding-top: 188px; 
+  padding-right: 472px; 
+  padding-bottom: 48px; 
+  padding-left: 472px;
 }
 
 .hero-button {
@@ -124,6 +137,8 @@ h1 {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding: 16px 32px; 
+  border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -134,9 +149,13 @@ h1 {
 /**---------------------------------------------*/
 
 /**---------------SECTION 2. FEATURE------------------------*/
-.featur-title {}
+.featur-title {
+  visibility: hidden;
+}
 
-.feature-list {}
+.feature-list {
+  padding: 120 px 156px;
+}
 
 .feature-item {}
 
