@@ -24,34 +24,36 @@ a {
   font-style: normal;
 }
 
+p, h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
   list-style: none;
-}
-.container{
-width: 1440px;
-outline: 2px solid red;
-margin: 0 auto;
-
+  padding: 0;
+  margin: 0;
 }
 
+botton {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  min-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 /**---------------HEADER------------------------*/
 
-.nav-item {
-  color: #2e2f42;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  /* 150% */
-  letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  }
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #404bbf;
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
-
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .logo {
   font-family: Raleway, sans-serif;
   color: #4d5ae5;
@@ -61,9 +63,7 @@ margin: 0 auto;
   /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 2,.5px;
-  padding-bottom: 25.5px;
-}
+  }
 
 .logo-part {
   color: #2e2f42;
@@ -74,34 +74,50 @@ margin: 0 auto;
   /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  
+  margin-right: 76px;
 }
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  gap: 40px;
+}
+.nav-item {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  /* 150% */
+  letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+
 address {
   font-style: normal;
   padding-top: 24px;
   padding-bottom: 24px;
 }
-/*
-h1 {
-  color: #fff;
-  text-align: center;
-  
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  background: #2e2f42;
+
+.header-adress {
+  margin-left: auto;
 }
 
-.hero-button {
-  font-family: inherit;
-  background: #4d5ae5;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
+.header-adress-list {
+  display: flex;
+  gap: 40px;
 }
-*/
+
 .header-adress-link:hover,
 .header-adress-link:focus {
   color: #404bbf;
@@ -110,22 +126,26 @@ h1 {
 
 /**---------------SECTION 1. HERO------------------------*/
 
-.hero {
+/*.hero {
   background: #2e2f42;
   height: 600px;
+}*/
+.hero-container {
+  background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 48px;
 }
 
 .hero-title {
   color: #fff;
-  text-align: center;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  padding-top: 188px; 
-  padding-right: 472px; 
-  padding-bottom: 48px; 
-  padding-left: 472px;
+  max-width: 496px;
+  text-align: center;
+
+
 }
 
 .hero-button {
@@ -137,7 +157,7 @@ h1 {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  padding: 16px 32px; 
+  padding: 16px 32px;
   border-radius: 4px;
 }
 
@@ -150,14 +170,18 @@ h1 {
 
 /**---------------SECTION 2. FEATURE------------------------*/
 .featur-title {
-  
-}
+ }
 
 .feature-list {
-  padding: 120 px 156px;
+  padding-top: 120 px;
+  padding-bottom: 120px;
+  display: flex;
+  gap: 24px;
 }
 
-.feature-item {}
+.feature-item {
+  width: calc((100% - 24px * 3) / 4);
+}
 
 .feature-subtitle {
   color: #2e2f42;
@@ -190,12 +214,20 @@ h1 {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 
-.team-list {}
+.team-list {
+  display: flex;
+  gap: 24px;
+}
 
 .team-item {
   background-color: #ffffff;
+  border: 1px solid blue;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-subtitle {
@@ -205,6 +237,9 @@ h1 {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 8px;
+  
 }
 
 .team-text {
@@ -213,13 +248,16 @@ h1 {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
+  text-align: center;
 }
 
 /**---------------------------------------------*/
 
 /**---------------SECTION 4. PORTFOLIO------------------------*/
 
-.portfolio {}
+.portfolio {
+}
 
 .portfolio-title {
   color: #2e2f42;
@@ -229,11 +267,19 @@ h1 {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
 }
 
-.portfolio-list {}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 
-.portfolio-item {}
+.portfolio-item {
+  border: 1px solid #E7E9FC;
+
+}
 
 .portfolio-subtitle {
   color: #2e2f42;
@@ -241,6 +287,8 @@ h1 {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 
 .portfolio-text {
@@ -248,6 +296,7 @@ h1 {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
 }
 
 /**---------------------------------------------*/
@@ -255,15 +304,14 @@ h1 {
 /**---------------FOOTER------------------------*/
 .footer {
   background: #2e2f42;
+  padding-bottom: 100px;
+  padding-top: 100px;
+
+}
+.logo {
+    
 }
 
-.footer-text {
-  color: #f4f4fd;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
 .footer-logo-part {
   color: #f4f4fd;
   font-family: Raleway, sans-serif;
@@ -273,4 +321,13 @@ h1 {
   /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.footer-text {
+  color: #f4f4fd;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding-top: 16px;
+  width: 264px;
 }
