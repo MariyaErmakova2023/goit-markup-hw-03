@@ -40,7 +40,7 @@ botton {
 }
 img {
   display: block;
-  
+
 }
 
 .container {
@@ -174,7 +174,11 @@ address {
 /**---------------------------------------------*/
 
 /**---------------SECTION 2. FEATURE------------------------*/
-.featur-title {
+
+.featuer {
+  padding: 120px 0;
+}
+.feature-title {
  }
 
 .feature-list {
@@ -194,6 +198,7 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px; 
 }
 
 .feature-text {
@@ -314,7 +319,8 @@ address {
 
 }
 .logo {
-    
+  display: inline-block;
+  margin-bottom: 16px; 
 }
 
 .footer-logo-part {
