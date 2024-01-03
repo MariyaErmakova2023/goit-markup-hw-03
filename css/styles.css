@@ -38,10 +38,13 @@ ul {
 botton {
   cursor: pointer;
 }
+img {
+  display: block;
+}
 
 .container {
   width: 100%;
-  min-width: 1158px;
+  width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -63,6 +66,7 @@ botton {
   /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
   }
 
 .logo-part {
@@ -80,6 +84,7 @@ botton {
 .header-nav {
   display: flex;
   align-items: center;
+  
 }
 
 .header-list {
@@ -93,8 +98,7 @@ botton {
   line-height: 1.5;
   /* 150% */
   letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0 24px;
   display: block;
 }
 
