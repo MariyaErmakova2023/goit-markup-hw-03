@@ -91,6 +91,7 @@ img {
 .header-list {
   display: flex;
   gap: 40px;
+  padding: 24px 0
 }
 .nav-item {
   color: #2e2f42;
@@ -149,8 +150,6 @@ address {
   letter-spacing: 0.02em;
   max-width: 496px;
   text-align: center;
-
-
 }
 
 .hero-button {
@@ -311,6 +310,7 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
