@@ -91,7 +91,7 @@ img {
 
 .header-nav {
   display: flex;
-  /*align-items: center;*/
+  align-items: center;
 }
 
 .header-list {
@@ -107,6 +107,9 @@ img {
   letter-spacing: 0.02em;
   display: block;
   /*padding: 24px 0;*/
+  
+}
+.nav-link {
   padding-top: 24px; 
   padding-bottom: 24px;
 }
