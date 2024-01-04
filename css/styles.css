@@ -102,6 +102,7 @@ img {
   letter-spacing: 0.02em;
   padding: 24px 0 24px;
   display: block;
+  padding: 24px 0 ;
 }
 
 .nav-link:hover,
@@ -132,13 +133,12 @@ address {
 
 /**---------------SECTION 1. HERO------------------------*/
 
-/*.hero {
-  background: #2e2f42;
-  height: 600px;
-}*/
+.hero {
+  padding: 188px 0;
+}
+
 .hero-container {
   background-color: #2e2f42;
-  padding-top: 188px;
   padding-bottom: 48px;
 }
 
@@ -153,6 +153,7 @@ address {
 }
 
 .hero-button {
+  display: block; 
   background: #4d5ae5;
   color: #fff;
   font-family: inherit;
@@ -163,6 +164,11 @@ address {
   cursor: pointer;
   padding: 16px 32px;
   border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+
+
 }
 
 .hero-button:hover,
