@@ -42,6 +42,10 @@ img {
   display: block;
 
 }
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .container {
   width: 100%;
@@ -224,8 +228,8 @@ address {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  padding: 32px 0 32px
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -238,6 +242,11 @@ address {
   border: 1px solid blue;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  width: calc((100% - 72px) / 4)
+}
+
+.team-item-name{
+  padding: 32px 0 32px
 }
 
 .team-subtitle {
@@ -247,8 +256,7 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   
 }
 
@@ -258,7 +266,6 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
   text-align: center;
 }
 
