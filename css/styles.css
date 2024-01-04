@@ -42,10 +42,6 @@ img {
   display: block;
 
 }
-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 
 .container {
   width: 100%;
@@ -179,9 +175,10 @@ address {
 
 /**---------------SECTION 2. FEATURE------------------------*/
 
-.featuer {
+.feature {
   padding: 120px 0;
-}
+ }
+
 .feature-title {
  }
 
@@ -218,6 +215,7 @@ address {
 /**---------------SECTION 3. TEAM------------------------*/
 .team {
   background: #f4f4fd;
+  padding: 120px 0;
 }
 
 .team-title {
@@ -274,6 +272,7 @@ address {
 /**---------------SECTION 4. PORTFOLIO------------------------*/
 
 .portfolio {
+  padding: 120px 0;
 }
 
 .portfolio-title {
