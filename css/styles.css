@@ -42,7 +42,7 @@ img {
   display: block;
 
 }
-.section {
+section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -228,7 +228,7 @@ address {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding: 32px 0 32px
+  padding: 32px 0 32px;
   margin-bottom: 72px;
 }
 
@@ -284,18 +284,26 @@ address {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-item {
   border: 1px solid #E7E9FC;
+  width: calc((100% - 48px) / 3); 
+}
 
+.portfolio-item-content {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 .portfolio-subtitle {
@@ -304,8 +312,6 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 8px;
 }
 
 .portfolio-text {
@@ -313,8 +319,7 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
-}
+ }
 
 /**---------------------------------------------*/
 
