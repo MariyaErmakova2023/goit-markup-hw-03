@@ -347,7 +347,7 @@ address {
   padding-top: 100px;
 }
 .logo {
-  display: inline-block;
+ 
 }
 .footer-logo {
   font-family: Raleway, sans-serif;
@@ -358,6 +358,8 @@ address {
   /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-part {
@@ -369,6 +371,7 @@ address {
   /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
 }
 .footer-text {
   color: #f4f4fd;
